@@ -9,7 +9,6 @@ function isPrime(num) {
     }
     return true;
 }
-
 function findPrimes(numbers) {
     const primeNumbers = [];
     for (let i = 0; i < numbers.length; i++) {
@@ -22,4 +21,4 @@ function findPrimes(numbers) {
 
 // Test the function
 const inputArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-console.log(findPrimes(inputArray)); // Output: [2, 3, 5, 7]
+console.log(findPrimes(inputArray));
