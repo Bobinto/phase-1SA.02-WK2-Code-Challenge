@@ -10,6 +10,4 @@ function swapCase(inputString) {
     }
     return swappedString;
 }
-
-// Test the function
-console.log(swapCase('The Quick Brown Fox')); // Output: 'tHE qUICK bROWN fOX'
+console.log(swapCase('The Quick Brown Fox'));
