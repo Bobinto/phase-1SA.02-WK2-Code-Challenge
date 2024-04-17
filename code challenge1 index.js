@@ -1,13 +1,12 @@
 function swapCase(inputString) {
-    let swappedString = '';
-    for (let i = 0; i < inputString.length; i++) {
-        let char = inputString[i];
-        if (char === char.toUpperCase()) {
-            swappedString += char.toLowerCase();
-        } else {
-            swappedString += char.toUpperCase();
-        }
-    }
-    return swappedString;
+
+  const swappedChars = inputString.split('').map(char =>
+      char === char.toUpperCase() ? char.toLowerCase() : char.toUpperCase());
+  const swappedString = swappedChars.join('');
+
+  return swappedString;
 }
-console.log(swapCase('The Quick Brown Fox'));
+
+const inputStr = 'HELLO WORLD';
+const outputStr = swapCase(inputStr);
+console.log(outputStr);
